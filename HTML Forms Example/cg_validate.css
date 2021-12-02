@@ -1,0 +1,36 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Case Problem 1
+
+   ACGIP Registration Validation Style Sheet
+   Author: Dominic DiModugno
+   Date:   September 30, 2021
+
+   Filename: cg_validate.css
+
+*/
+
+
+/* Validation Styles */
+input:focus, select:focus, textarea:focus {
+  background-color: rgb(245, 245, 140);
+}
+
+input#fnBox:focus:valid,
+input#inBox:focus:valid,
+input#addBox:focus:valid,
+input#mailBox:focus:valid,
+input#phoneBox:focus:valid,
+input#idBox:focus:valid {
+  background-color: rgb(245, 245, 1440) url("cg_valid.png") no-repeat;
+}
+
+input#fnBox:focus:invalid,
+input#inBox:focus:invalid,
+input#addBox:focus:invalid,
+input#mailBox:focus:invalid,
+input#phoneBox:focus:invalid,
+input#idBox:focus:invalid {
+  background-color: rgb(255, 232, 232) url("cg_invalid.png") right no-repeat;
+}
